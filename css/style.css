@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 20px;
+    background: radial-gradient(purple,black);
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .main__container {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 20px;
+    
+  }
+
+  .header {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header img {
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease, transform 0.3s ease;
+  }
+
+  .header:hover img {
+    filter: brightness(70%);
+    transform: scale(1.1);
+  }
+  h1{
+        color:white;
+        font-size: 40px;
+  }

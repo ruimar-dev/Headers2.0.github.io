@@ -1,0 +1,43 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 43px;
+    margin-right: 40px;
+    padding-bottom: 24px;
+    font-size: 18px;
+    &__nav{
+        display: flex;
+        list-style: none;
+        gap: 45px;
+        &-link{
+            text-decoration: none;
+            color:black;
+            font-style: normal;
+            font-weight: 500;
+        }
+    }
+    &__icons{
+        display: flex;
+        list-style: none;
+        gap:26px;
+        align-items: center;
+        &-quiz{
+            @include button(white);
+        }
+        &-shopping-bag{
+            position: relative;
+            &::before{
+                content: "";
+                background-color: red;
+                position: absolute;
+                right: -3px;
+                top:-9px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                display: block;
+            }
+        }
+    }
+}

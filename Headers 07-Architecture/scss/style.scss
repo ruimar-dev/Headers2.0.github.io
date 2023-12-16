@@ -1,0 +1,183 @@
+$color_gray:#9E9D9B;
+$color_black:#424241;
+$font_playfair:'Playfair Display', serif;
+$font_poppins:'Poppins', sans-serif;
+@mixin button{
+    color:white;
+    background-color: $color_black;
+    padding: 10px;
+    text-decoration: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    font-family: $font_poppins;
+    color: $color_black;
+    padding-left: 128px;
+    padding-right: 80px;
+    background: linear-gradient(to left, #DEDAD5 50%,#FAF8F5 50%);
+    padding-bottom: 73px;
+    max-width: 1440px;
+}
+
+.header{
+    display: flex;
+    padding-top: 26px;
+    align-items: center;
+    margin-bottom: 70px;
+    &__nav{
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav__list{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        .nav__item{
+            .nav__link{
+                text-decoration: none;
+                color: $color_gray;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 17px;
+                &:hover{
+                    color: $color_black;
+                }
+            }
+        }
+
+    }
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    background: url(../img/image01.png) no-repeat,url(../img/image02.png) no-repeat;
+    background-position: center top,right 6% top;
+    background-size: 350px;
+    
+    &__section{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        .section__title{
+            font-family: $font_playfair;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 75px;
+            max-width: 600px;
+            margin: 0;
+        }
+        .section__paragraph{
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 400;
+            color:$color_gray;
+            max-width: 500px;
+        }
+    }
+    &__nav{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 60px;
+        .nav__button-black{
+            @include button;
+            display: flex;
+            align-items: center;
+            &::after{
+                content: url(../img/layer2.svg);
+                margin-top: 2px;
+                
+            }
+        }
+        .nav__button{
+          text-decoration: none;
+          color: $color_black;  
+          &::after{
+            content: ">";
+            margin-left: 8px;
+          }
+        }
+    }
+    &__section2{
+        display: flex;
+        gap: 40px;
+        .item__title{
+            font-size: 35px;
+            font-weight: 500;
+            line-height: 60px;
+        }
+        .item__description{
+            color:$color_gray;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            max-width: 100px;
+            display: inline-block;
+        }
+    }
+    &__section3{
+        background-color: white;
+        width: 316px;
+        padding-left: 10px;
+
+        padding: 27px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position:absolute;
+        right: 150px;
+        bottom: 144px;
+        padding-top: 20px;
+        padding-bottom: 0;
+        .section__subtitle{
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        .section__service{
+            display: flex;
+            gap: 13px;
+            align-items: center;
+            position: relative;
+            &::after{
+                content: url(../img/Arrow.svg);
+                display: inline-block;
+                margin-left: auto;
+            }
+            &::before{
+                content: "";
+                width: 260px;
+                background-color: $color_gray;
+                display: block;
+                position: absolute;
+                height:1px;
+                bottom: -7px;
+            }
+            .service__number{
+                color: $color_gray;
+            }
+            .service__name{
+                display: flex;
+                align-items: center;
+            }
+            &:last-child{
+                &::before{
+                    content: "";
+                    width:0;
+                }
+            }
+        }
+    }
+}
+
+
+

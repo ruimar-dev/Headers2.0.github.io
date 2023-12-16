@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.aside {
+  background-color: #ECF494;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 40px;
+  padding-bottom: 24px;
+  font-size: 18px;
+}
+.header__nav {
+  display: flex;
+  list-style: none;
+  gap: 45px;
+}
+.header__nav-link {
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+  font-weight: 500;
+}
+.header__icons {
+  display: flex;
+  list-style: none;
+  gap: 26px;
+  align-items: center;
+}
+.header__icons-quiz {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.header__icons-shopping-bag {
+  position: relative;
+}
+.header__icons-shopping-bag::before {
+  content: "";
+  background-color: red;
+  position: absolute;
+  right: -3px;
+  top: -9px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+}
+
+.container {
+  font-family: "Noto Serif", serif;
+}
+
+.main__content {
+  background-image: url(../img/image\ 666.png), url(../img/unsplash__H1ZmUzwp9w.png);
+  background-color: beige;
+  background-repeat: no-repeat, no-repeat;
+  background-position: right top, right 35% top;
+  background-size: 400px, 510px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 814px;
+}
+.main__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+.main__title {
+  font-size: 74px;
+  max-width: 720px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  display: flex;
+  margin-top: 20px;
+}
+.main__quiz-link {
+  text-decoration: none;
+  color: #ECF494;
+  background-color: black;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.main__section {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  margin-right: 60px;
+}
+.main__article {
+  display: flex;
+  gap: 18px;
+}
+.main__article-icon-1 {
+  align-self: self-start;
+  margin-top: 9px;
+}
+.main__article-icon-2 {
+  align-self: self-start;
+  margin-top: 9px;
+}
+.main__article-title {
+  font-size: 24px;
+}
+.main__article-description {
+  color: rgba(26, 26, 26, 0.6);
+  font-size: 16px;
+  max-width: 327px;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}/*# sourceMappingURL=style.css.map */

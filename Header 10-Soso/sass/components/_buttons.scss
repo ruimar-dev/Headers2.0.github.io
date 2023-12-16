@@ -1,0 +1,9 @@
+@mixin button($color){
+    text-decoration: none;
+    color:$color;
+    background-color: black;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+
+}

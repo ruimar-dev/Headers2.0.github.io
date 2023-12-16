@@ -1,0 +1,255 @@
+$font_principal:'Poppins', sans-serif;
+$font_secundario:'Belgrano', serif;
+$color_grey:#8E8E8E;
+$color_black:#2E2F38;
+$color_red:#FA504D;
+@mixin button{
+    list-style: none;
+    width: 100px;
+    height: 32px;
+    background-color: $color_red;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.container{
+  margin-left: 130px; 
+  font-family: $font_principal; 
+  background: url(../img/background.png) no-repeat right;
+  background-size:660px;
+  
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        color:$color_black;
+        font-size:30px;
+        font-family: $font_secundario;
+    }
+    &__logo-art{
+        color:$color_red;
+    }
+    &__nav{
+        display: flex;
+        
+    }
+    &__nav-nave{
+        margin-right: auto;
+        margin-left: 93px;
+        padding: 0px;
+    }
+    &__nav-list{
+        display:flex;
+        gap:40px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 130px;
+    }
+    &__nav-item{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     &__nav-link{
+        text-decoration: none;
+        color: $color_black;
+     }
+     &__nav-item--signup{
+        list-style: none;
+        
+     }
+     &__nav-item--signup{
+        list-style: none;
+        
+     }
+     &__nav-item--signin{
+        @include button;
+        padding: 5px 10px;
+     }
+     &__nav-link--signin{
+        text-decoration: none;
+        color: white;
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     &__nav-link-up{
+        color:white;
+        text-decoration: none;
+     }
+}
+
+.main{
+    max-width:740px;
+    &__title{
+        font-size: 60px;
+        font-family: $font_secundario;
+        font-weight: 400;
+        margin-bottom: 16px;
+        line-height: 80px;
+    }
+    &__description{
+        font-size: 16px;
+        color: $color_grey;
+        &-collect{
+            text-decoration: underline $color_red 3px;
+        }
+    }
+    &__explore{
+        display: flex;
+        align-items: center;
+        gap:30px
+    }
+    &__explore-link{
+        @include button;
+        width:120px;
+        padding: 5px 18px;
+    }
+    &__explore-more-link{
+        color:$color_black;
+        text-decoration: underline $color_grey;
+    }
+
+    &__title-fea{
+        font-size: 26px;
+        font-family: $font_secundario;
+        font-weight: 400;
+    }
+    &__featured-artwork{
+        display: flex;
+        margin: 0;
+        gap:10px;
+        margin-bottom: 20px;
+
+    }
+    &__artwork-image{
+        padding: 0;
+        width: 45%;
+        
+    }
+    &__title::before{
+        content: "";
+        position: absolute;
+        width: 300px; 
+        height: 150px; 
+        background-image: url('../img/Vector.png'); 
+        background-repeat: no-repeat; 
+        background-size: 240px;
+        left: 238px; 
+        z-index: 1;
+    }
+}
+
+.container2{
+    display:flex;
+}
+
+.aside{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-right: 0;
+    background: url(../img/image.png) center top 0   no-repeat;
+    background-size:550px;
+
+    &__artist{
+        background-color: white;
+        width: 550px;
+        height: 135px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    &__artist-info{
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+    }
+    &__bid-info{
+        display: flex;
+        flex-direction: column;
+    }
+    &__artwork-nav{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        align-items: center
+    
+    }
+    &__bid-now-link{
+        @include button;
+        width:260px;
+    }
+    &__artist-infor{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:15px;
+        position:relative;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    &__artist-infor:after{
+        content: "";
+        position: absolute;
+        width: 544px;
+        height: 1px;
+        background-color: $color_black;
+        bottom: 0;
+    }
+    &__stats{
+        display:flex;
+        justify-content: space-between;
+        color:white;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    &__stat-count{
+        color:$color_red;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    &__artwork-title{
+        font-size: 14px;
+    }
+
+    &__stast-prduct{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:10px
+    }
+    &__artwork-title{
+        font-weight: 600;
+        font-size: 17px;
+    }
+    &__bid-amount{
+        font-weight: 600;
+        font-size: 17px;
+    }
+    &__artist-name{
+        color: $color_grey;
+    }
+    &__bid-label{
+        color: $color_grey;
+    }
+    &__view-artwork-link{
+        color:$color_red;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
+

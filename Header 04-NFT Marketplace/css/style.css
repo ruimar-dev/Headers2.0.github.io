@@ -1,0 +1,252 @@
+
+.container {
+  padding-left: 42px;
+  font-family: "Poppins", sans-serif;
+  background: url(../img/background.png) no-repeat right;
+  background-size: 47%;
+  max-width: 1440px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  color: #2E2F38;
+  font-size: 30px;
+  font-family: "Belgrano", serif;
+}
+.header__logo-art {
+  color: #FA504D;
+}
+.header__nav {
+  display: flex;
+}
+.header__nav-nave {
+  margin-right: auto;
+  margin-left: 93px;
+  padding: 0px;
+}
+.header__nav-list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 130px;
+}
+.header__nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__nav-link {
+  text-decoration: none;
+  color: #2E2F38;
+}
+.header__nav-item--signup {
+  list-style: none;
+}
+.header__nav-item--signup {
+  list-style: none;
+}
+.header__nav-item--signin {
+  list-style: none;
+  width: 100px;
+  height: 32px;
+  background-color: #FA504D;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.header__nav-link--signin {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__nav-link-up {
+  color: white;
+  text-decoration: none;
+}
+
+
+.main__title {
+  font-size: 60px;
+  font-family: "Belgrano", serif;
+  font-weight: 400;
+  margin-bottom: 16px;
+  line-height: 80px;
+}
+.main__description {
+  font-size: 16px;
+  color: #8E8E8E;
+}
+.main__description-collect {
+  text-decoration: underline #FA504D 3px;
+}
+.main__explore {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.main__explore-link {
+  list-style: none;
+  width: 100px;
+  height: 32px;
+  background-color: #FA504D;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 120px;
+  padding: 5px 18px;
+}
+.main__explore-more-link {
+  color: #2E2F38;
+  text-decoration: underline #8E8E8E;
+}
+.main__title-fea {
+  font-size: 26px;
+  font-family: "Belgrano", serif;
+  font-weight: 400;
+}
+.main__featured-artwork {
+  display: flex;
+  margin: 0;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.main__artwork-image {
+  padding: 0;
+  width: 45%;
+}
+.main__title::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  background-image: url("../img/Vector.png");
+  background-repeat: no-repeat;
+  background-size: 240px;
+  left: 152px;
+  z-index: 1;
+}
+
+.container2 {
+  display: flex;
+}
+
+.aside {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-right: 15px;
+  background: url(../img/image.png) center top 0 no-repeat;
+  background-size: 550px;
+}
+.aside__artist {
+  background-color: white;
+  width: 550px;
+  height: 135px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.aside__artist-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+.aside__bid-info {
+  display: flex;
+  flex-direction: column;
+}
+.aside__artwork-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.aside__bid-now-link {
+  list-style: none;
+  width: 100px;
+  height: 32px;
+  background-color: #FA504D;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 260px;
+}
+.aside__artist-infor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.aside__artist-infor:after {
+  content: "";
+  position: absolute;
+  width: 544px;
+  height: 1px;
+  background-color: #2E2F38;
+  bottom: 0;
+}
+.aside__stats {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 20px;
+  margin-right: 16px;
+  align-items: center;
+}
+.aside__stat-count {
+  color: #FA504D;
+  font-size: 28px;
+  font-weight: 600;
+}
+.aside__artwork-title {
+  font-size: 14px;
+}
+.aside__stast-prduct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.aside__artwork-title {
+  font-weight: 600;
+  font-size: 17px;
+}
+.aside__bid-amount {
+  font-weight: 600;
+  font-size: 17px;
+}
+.aside__artist-name {
+  color: #8E8E8E;
+}
+.aside__bid-label {
+  color: #8E8E8E;
+}
+.aside__view-artwork-link {
+  color: #FA504D;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}/*# sourceMappingURL=style.css.map */

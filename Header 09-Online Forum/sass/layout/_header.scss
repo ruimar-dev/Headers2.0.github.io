@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    align-items: center;
+    margin-right: 200px;
+    &__nav{
+        display: flex;
+        list-style: none;
+        gap:38px;
+        position: relative;
+        &::before{
+            content: "";
+            width: 32px;
+            height: 4px;
+            background-color: $color_pink;
+            position: absolute;
+            bottom: -8px;
+        }
+        &-link{
+            color:$color_gray;
+            text-decoration: none;
+            
+        }
+        
+    }
+}

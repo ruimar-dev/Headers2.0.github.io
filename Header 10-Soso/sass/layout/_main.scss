@@ -1,0 +1,65 @@
+.main{
+    &__content{
+        background-image:url(../../img/image\ 666.png) , url(../../img/unsplash__H1ZmUzwp9w.png);
+        background-color: $color_beige;
+        background-repeat: no-repeat , no-repeat;
+        background-position: right top , right 44% top;
+        padding-left: 43px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 814px;
+    }
+    
+
+    &__intro{
+       display: flex;
+       flex-direction: column;
+       gap: 40px;
+       margin-bottom: 30px;
+
+    }
+    &__title{
+        font-size: 63px;
+        max-width: 720px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        display: flex;
+        margin-top: 20px;
+    }
+    &__quiz-link{
+        @include button($color_green);
+        max-width: max-content;
+    }
+    &__section{
+        display: flex;
+        gap:60px;
+        justify-content: space-between;
+        margin-right: 60px;
+    }
+    &__article{
+        display: flex;
+        gap:18px;
+        &-icon-1{
+            align-self:self-start;
+            margin-top: 9px;
+        }
+        &-icon-2{
+            align-self:self-start;
+            margin-top: 9px;
+        }
+        &-title{
+            font-size: 24px;
+        }
+        
+        &-description{
+            color:$color_gray;
+            font-size: 16px;
+            max-width: 327px;
+        }
+        &-icon-3{
+            align-self: flex-end;
+            margin-bottom: 44px;
+        }
+    }
+}

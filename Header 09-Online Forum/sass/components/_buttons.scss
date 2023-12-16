@@ -1,0 +1,8 @@
+@mixin button{
+    color:white;
+    background-color: $color_pink;
+    border-radius: 16px 16px 16px 0px;
+    font-size: 18px;
+    padding: 13px 57px 14px 55px;
+    text-decoration: none;
+}

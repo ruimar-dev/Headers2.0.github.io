@@ -1,0 +1,92 @@
+.main-content{
+    &__title{
+        text-align: center;
+        font-size: 70px;
+        font-family: $font_Oswald;
+        margin-bottom: 60px;
+        position: relative;
+        &::before{
+            content: "";
+            width: 82px;
+            height: 4px;
+            background-color: $color_lightbrowm;
+            position: absolute;
+            bottom: -8px;
+        }
+        
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .service-section{
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        &__title{
+            margin-bottom: 20px;
+            font-family: $font_Oswald;
+            font-size: 30px;
+        }
+        .service-item{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            &__title{
+                font-family: $font_Oswald;
+            }
+            div{
+                display: flex;
+                align-items: center;
+            }
+            &__description{
+                color:$color_gray;
+                max-width: 240px;
+                font-size: 16px;
+                line-height: 32px;
+            }
+        }
+    }
+    .web-specialist-section{
+        display: flex;
+        flex-direction: column;
+        gap:25px;
+        &__title{
+            font-family: $font_Oswald;
+            font-size: 30px;
+        }
+        &__description{
+            font-size: 18px;
+            color: $color_gray;
+            max-width: 410px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            line-height: 32px;
+        }
+        &__hire-link{
+            @include button;
+            margin-bottom: 26px;
+            font-size: 26px;
+        }
+    }
+    .statistics{
+        display: flex;
+        gap:45px;
+        .statistic-item{
+            display: flex; 
+            flex-direction: column;
+            gap:10px;
+            &__number{
+               font-size: 26px; 
+               font-family: $font_Oswald;
+            }
+            &__label{
+                color: $color_gray;
+                
+            }
+        }
+    }
+    
+}
