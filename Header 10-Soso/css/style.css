@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 43px;
   margin-right: 40px;
   padding-bottom: 24px;
   font-size: 18px;
@@ -63,15 +63,15 @@
 
 .container {
   font-family: "Noto Serif", serif;
+  max-width: 1440px;
 }
 
 .main__content {
-  background-image: url(../img/image\ 666.png), url(../img/unsplash__H1ZmUzwp9w.png);
+  background-image: url(../../img/image\ 666.png), url(../../img/unsplash__H1ZmUzwp9w.png);
   background-color: beige;
   background-repeat: no-repeat, no-repeat;
-  background-position: right top, right 35% top;
-  background-size: 400px, 510px;
-  padding-left: 100px;
+  background-position: right top, right 44% top;
+  padding-left: 43px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -84,7 +84,7 @@
   margin-bottom: 30px;
 }
 .main__title {
-  font-size: 74px;
+  font-size: 63px;
   max-width: 720px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -126,6 +126,10 @@
   color: rgba(26, 26, 26, 0.6);
   font-size: 16px;
   max-width: 327px;
+}
+.main__article-icon-3 {
+  align-self: flex-start;
+  margin-top: 25px;
 }
 
 body {

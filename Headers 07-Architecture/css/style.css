@@ -7,10 +7,11 @@
 .container {
   font-family: "Poppins", sans-serif;
   color: #424241;
-  padding-left: 80px;
+  padding-left: 128px;
   padding-right: 80px;
   background: linear-gradient(to left, #DEDAD5 50%, #FAF8F5 50%);
   padding-bottom: 73px;
+  max-width: 1440px;
 }
 
 .header {
@@ -45,7 +46,7 @@
   flex-direction: column;
   gap: 50px;
   background: url(../img/image01.png) no-repeat, url(../img/image02.png) no-repeat;
-  background-position: center top, right 10% top;
+  background-position: center top, right 6% top;
   background-size: 350px;
 }
 .main__section {
@@ -120,8 +121,8 @@
   flex-direction: column;
   gap: 30px;
   position: absolute;
-  right: 190px;
-  bottom: 40px;
+  right: 150px;
+  bottom: 144px;
   padding-top: 20px;
   padding-bottom: 0;
 }
